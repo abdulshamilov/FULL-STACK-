@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+    <div class="middle">
+        <div class="box-1">
+            <h1><span>СОЛНЕЧНЫЕ</span><span style="color: white">СТАНЦИИ</span></h1>
+            <p class="p1">Для бизнеса и дома</p>
+            <button id="openForm">Оформить заказ</button>
+        </div>  
+    </div>
+
+    <!-- Модальное окно с формой -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeForm">&times;</span>
+            <div class="form-container">
+                <h2>Оформление заказа</h2>
+                <p>Оставьте заявку для получения обратной связи</p>
+                <form id="orderForm">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                    <textarea placeholder="Обращение"></textarea>
+                    <button type="submit">Оставить заявку</button>
+                    <p class="consent">Нажимая на кнопку, вы даёте согласие на обработку персональных данных.</p>
+                </form>
+            </div>
+            <div class="image-container">
+                <img src="media/form.png" alt="Солнечные панели">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/form.js"></script>
+
+</body>
+</html>
